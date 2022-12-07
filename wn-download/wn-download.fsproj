@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>wn_download</RootNamespace>
+        <PublishSingleFile>true</PublishSingleFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Utils.fs" />
+        <Compile Include="Wellnote.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Selenium.WebDriver" Version="4.7.0" />
+      <PackageReference Include="WebDriverManager" Version="2.16.2" />
+    </ItemGroup>
+
+</Project>
